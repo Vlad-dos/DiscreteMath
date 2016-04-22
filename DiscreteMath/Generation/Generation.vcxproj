@@ -135,6 +135,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="nothing.cpp" />
+    <ClCompile Include="num2brackets.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="num2choose.cpp">
       <SubType>
       </SubType>
@@ -173,6 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="checker.h" />
+    <ClInclude Include="num2brackets.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

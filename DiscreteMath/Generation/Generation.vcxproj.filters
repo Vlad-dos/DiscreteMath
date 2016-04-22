@@ -63,6 +63,9 @@
     <ClCompile Include="choose2num.cpp">
       <Filter>Файлы исходного кода\bynumber</Filter>
     </ClCompile>
+    <ClCompile Include="num2brackets.cpp">
+      <Filter>Файлы исходного кода\bynumber</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -80,6 +83,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="checker.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="num2brackets.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
