@@ -90,7 +90,7 @@ namespace num2part {
 					}
 				}
 				else {
-					parts[i][j] = parts[i][k - 1] + parts[i - k][k];
+					parts[i][j] = parts[i][j - 1] + parts[i - j][j];
 				}
 			}
 		}
