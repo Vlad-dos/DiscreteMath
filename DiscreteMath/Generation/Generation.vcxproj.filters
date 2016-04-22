@@ -19,6 +19,9 @@
     <Filter Include="Файлы исходного кода\bynumber">
       <UniqueIdentifier>{df4eb99d-3826-4d57-83d3-abcae75e6142}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы исходного кода\next">
+      <UniqueIdentifier>{c4ed44e1-b759-4d2a-88a6-37eaf90ddc2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="task_selection.h">
@@ -77,6 +80,12 @@
     </ClCompile>
     <ClCompile Include="num2part.cpp">
       <Filter>Файлы исходного кода\bynumber</Filter>
+    </ClCompile>
+    <ClCompile Include="part2num.cpp">
+      <Filter>Файлы исходного кода\bynumber</Filter>
+    </ClCompile>
+    <ClCompile Include="nextvector.cpp">
+      <Filter>Файлы исходного кода\next</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
