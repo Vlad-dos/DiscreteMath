@@ -2,7 +2,7 @@
 #include "task_selection.h"
 #include "checker.h"
 #else
-#define nextvector task
+#define nextperm task
 #endif
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -36,7 +36,7 @@
 
 using namespace std;
 
-namespace nextvector {
+namespace nextperm {
 
 #if defined(_DEBUG)
 #define debug printf
@@ -73,61 +73,81 @@ namespace nextvector {
 	const ll dx[4] = { -1, 0, 1, 0 };
 	const ll dy[4] = { 0, 1, 0, -1 };
 
-	string a;
+	int a[MAXN], s[MAXN];
+	int n;
 
 	void gena() {
-		int n = a.size() - 1;
-		while ((n >= 0) && (a[n] != '0')) {
-			a[n] = '0';
-			n--;
+		for (int i = n - 2; i >= 0; i--) {
+			if (a[i] < a[i + 1]) {
+				int min = i + 1;
+				for (int j = i + 2; j < n; j++) {
+					if ((a[j] < a[min]) && (a[j] > a[i]))
+						min = j;
+				}
+				swap(a[i], a[min]);
+				reverse(a + i + 1, a + n);
+				return;
+			}
 		}
-		if (n == -1) {
-			a = "-";
-			return;
+		for (int i = 0; i < n; i++) {
+			a[i] = 0;
 		}
-		a[n] = '1';
 	}
 
 	void gena2() {
-		int n = a.size() - 1;
-		while ((n >= 0) && (a[n] != '1')) {
-			a[n] = '1';
-			n--;
+		for (int i = n - 2; i >= 0; i--) {
+			if (a[i] > a[i + 1]) {
+				int min = i + 1;
+				for (int j = i + 2; j < n; j++) {
+					if ((a[j] > a[min]) && (a[j] < a[i]))
+						min = j;
+				}
+				swap(a[i], a[min]);
+				reverse(a + i + 1, a + n);
+				return;
+			}
 		}
-		if (n == -1) {
-			a = "-";
-			return;
+		for (int i = 0; i < n; i++) {
+			a[i] = 0;
 		}
-		a[n] = '0';
 	}
 
 	int main() {
-		cin >> a;
-		string s = a;
+		cin >> n;
+		for (int i = 0; i < n; i++) {
+			cin >> a[i];
+			s[i] = a[i];
+		}
 		gena2();
-		cout << a << endl;
-		a = s;
+		for (int i = 0; i < n; i++) {
+			cout << a[i] << ' ';
+			a[i] = s[i];
+		}
+		cout << endl;
 		gena();
-		cout << a << endl;
-		
+		for (int i = 0; i < n; i++) {
+			cout << a[i] << ' ';
+		}
+		cout << endl;
+
 		return 0;
 	}
 }
 
-#if defined(nextvector) && !defined(checker)
+#if defined(nextperm) && !defined(checker)
 int main() {
 #ifdef LOCAL
 	freopen("input.txt", "r", stdin);
 	//freopen("output.txt", "w", stdout);
 
 	while (!cin.eof()) {
-		nextvector::main();
+		nextperm::main();
 	}
-	nextvector::wait();
+	nextperm::wait();
 #else   
-	freopen("nextvector.in ", "r", stdin);
-	freopen("nextvector.out", "w", stdout);
-	nextvector::main();
+	freopen("nextperm.in ", "r", stdin);
+	freopen("nextperm.out", "w", stdout);
+	nextperm::main();
 #endif
 	return 0;
 }

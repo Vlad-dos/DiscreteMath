@@ -2,4 +2,4 @@
 
 //Name of file with main.
 //#define checker
-#define nextvector task
+#define nextperm task

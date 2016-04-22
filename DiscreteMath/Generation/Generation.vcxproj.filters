@@ -87,6 +87,9 @@
     <ClCompile Include="nextvector.cpp">
       <Filter>Файлы исходного кода\next</Filter>
     </ClCompile>
+    <ClCompile Include="nextperm.cpp">
+      <Filter>Файлы исходного кода\next</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

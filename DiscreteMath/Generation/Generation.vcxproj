@@ -142,6 +142,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="nextperm.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="nextvector.cpp">
       <SubType>
       </SubType>
