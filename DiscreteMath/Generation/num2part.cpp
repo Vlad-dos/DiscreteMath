@@ -80,17 +80,17 @@ namespace num2part {
 		cin >> n >> k;
 
 		for (int i = 0; i <= n; i++) {
-			for (int j = 0; j <= i; j++) {
-				if (j == 0) {
-					if (i == 0) {
-						parts[i][j] = 1;
-					}
-					else {
-						parts[i][j] = 0;
-					}
+			for (int j = n; j >= 0; j--) {
+				if (i == 0) {
+					parts[i][j] = 1;
+				} else if (j == i) {
+					parts[i][j] = 1;
+				}
+				else if (j > i) {
+					parts[i][j] = 0;
 				}
 				else {
-					parts[i][j] = parts[i][j - 1] + parts[i - j][j];
+					parts[i][j] = parts[i][j + 1] + parts[i - j][j];
 				}
 			}
 		}
@@ -101,7 +101,8 @@ namespace num2part {
 			if (parts[n - pos][pos] > k) {
 				ans.push_back(pos);
 				n -= pos;
-			} else {
+			}
+			else {
 				k -= parts[n - pos][pos];
 				pos++;
 			}
