@@ -79,7 +79,7 @@ namespace num2part {
 	int main() {
 		cin >> n >> k;
 
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i <= n; i++) {
 			for (int j = 0; j <= i; j++) {
 				if (j == 0) {
 					if (i == 0) {
@@ -102,8 +102,13 @@ namespace num2part {
 				ans.push_back(pos);
 				n -= pos;
 			} else {
-				
+				k -= parts[n - pos][pos];
+				pos++;
 			}
+		}
+
+		for (int i = 0; i < ans.size(); i++) {
+			cout << ans[i] << (i == ans.size() - 1 ? "" : "+");
 		}
 
 		return 0;
