@@ -66,6 +66,18 @@
     <ClCompile Include="num2brackets.cpp">
       <Filter>Файлы исходного кода\bynumber</Filter>
     </ClCompile>
+    <ClCompile Include="brackets2num.cpp">
+      <Filter>Файлы исходного кода\bynumber</Filter>
+    </ClCompile>
+    <ClCompile Include="num2brackets2.cpp">
+      <Filter>Файлы исходного кода\bynumber</Filter>
+    </ClCompile>
+    <ClCompile Include="brackets2num2.cpp">
+      <Filter>Файлы исходного кода\bynumber</Filter>
+    </ClCompile>
+    <ClCompile Include="num2part.cpp">
+      <Filter>Файлы исходного кода\bynumber</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

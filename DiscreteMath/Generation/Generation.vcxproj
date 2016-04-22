@@ -121,6 +121,14 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="brackets2num.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="brackets2num2.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="checker.cpp" />
     <ClCompile Include="choose.cpp">
       <SubType>
@@ -139,7 +147,15 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="num2brackets2.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="num2choose.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="num2part.cpp">
       <SubType>
       </SubType>
     </ClCompile>

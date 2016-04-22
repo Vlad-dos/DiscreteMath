@@ -2,4 +2,4 @@
 
 //Name of file with main.
 //#define checker
-#define num2brackets task
+#define num2part task
