@@ -142,7 +142,27 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="nextbrackets.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="nextchoose.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="nextmultiperm.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="nextpartition.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="nextperm.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="nextsetpartition.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -172,6 +192,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="part2num.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="part2sets.cpp">
       <SubType>
       </SubType>
     </ClCompile>

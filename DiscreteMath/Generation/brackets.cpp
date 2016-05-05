@@ -1,6 +1,4 @@
 #ifdef LOCAL
-#include "task_selection.h"
-#include "checker.h"
 #else
 #define brackets task
 #endif
@@ -10,29 +8,9 @@
 #include <iostream>
 #include <cstdio>
 #include <string>
-#include <cstring>
 #include <cstdlib>
-#include <algorithm>
 #include <vector>
-#include <map>
-#include <set>
-#include <string>
-#include <cmath>
-#include <fstream>
-#include <queue>
-#include <stack>
 #include <cassert>
-#include <complex>
-#include <bitset>
-#include <deque>
-#include <unordered_set>
-#include <unordered_map>
-#include <list>
-
-#include <forward_list>
-#include <numeric>
-#include <functional>
-#include <initializer_list>
 
 using namespace std;
 
@@ -60,7 +38,7 @@ namespace brackets {
 	typedef long long ll;
 	typedef long double ld;
 #define mp make_pair
-#define write(a, c) for (auto i : a) cout << i << c;
+#define write(a, c) for (auto j : a) cout << j << c;
 #define all(a) (a).begin(), (a).end()
 
 	const int K = 18;

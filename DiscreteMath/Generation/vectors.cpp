@@ -57,21 +57,21 @@ namespace vectors {
 	void wait() {}
 #endif
 
-	typedef long long ll;
+	typedef long long T;
 	typedef long double ld;
 #define mp make_pair
 #define write(a, c) for (auto& i : a) cout << i << c;
 #define all(a) (a).begin(), (a).end()
 
 	const int K = 18;
-	const ll MAXN = 1e6;
+	const T MAXN = 1e6;
 	const int INF = 2e9 + 1;
-	const ll LONG_INF = 8e18;
-	const ll MOD = 1e9 + 7;
+	const T LONG_INF = 8e18;
+	const T MOD = 1e9 + 7;
 	const ld e = 1e-9;
-	const ll C = 500;
-	const ll dx[4] = { -1, 0, 1, 0 };
-	const ll dy[4] = { 0, 1, 0, -1 };
+	const T C = 500;
+	const T dx[4] = { -1, 0, 1, 0 };
+	const T dy[4] = { 0, 1, 0, -1 };
 
 	vector< vector <int> > ans;
 	vector<int> cur;

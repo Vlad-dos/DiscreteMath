@@ -73,7 +73,7 @@ namespace nextperm {
 	const ll dx[4] = { -1, 0, 1, 0 };
 	const ll dy[4] = { 0, 1, 0, -1 };
 
-	int a[MAXN], s[MAXN];
+	int a[MAXN];
 	int n;
 
 	void gena() {
@@ -85,25 +85,7 @@ namespace nextperm {
 						min = j;
 				}
 				swap(a[i], a[min]);
-				reverse(a + i + 1, a + n);
-				return;
-			}
-		}
-		for (int i = 0; i < n; i++) {
-			a[i] = 0;
-		}
-	}
-
-	void gena2() {
-		for (int i = n - 2; i >= 0; i--) {
-			if (a[i] > a[i + 1]) {
-				int min = i + 1;
-				for (int j = i + 2; j < n; j++) {
-					if ((a[j] > a[min]) && (a[j] < a[i]))
-						min = j;
-				}
-				swap(a[i], a[min]);
-				reverse(a + i + 1, a + n);
+				sort(a + i + 1, a + n);
 				return;
 			}
 		}
@@ -116,14 +98,7 @@ namespace nextperm {
 		cin >> n;
 		for (int i = 0; i < n; i++) {
 			cin >> a[i];
-			s[i] = a[i];
 		}
-		gena2();
-		for (int i = 0; i < n; i++) {
-			cout << a[i] << ' ';
-			a[i] = s[i];
-		}
-		cout << endl;
 		gena();
 		for (int i = 0; i < n; i++) {
 			cout << a[i] << ' ';
@@ -145,8 +120,8 @@ int main() {
 	}
 	nextperm::wait();
 #else   
-	freopen("nextperm.in ", "r", stdin);
-	freopen("nextperm.out", "w", stdout);
+	freopen("nextmultiperm.in ", "r", stdin);
+	freopen("nextmultiperm.out", "w", stdout);
 	nextperm::main();
 #endif
 	return 0;

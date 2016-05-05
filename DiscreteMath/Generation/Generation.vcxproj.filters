@@ -90,6 +90,24 @@
     <ClCompile Include="nextperm.cpp">
       <Filter>Файлы исходного кода\next</Filter>
     </ClCompile>
+    <ClCompile Include="nextchoose.cpp">
+      <Filter>Файлы исходного кода\next</Filter>
+    </ClCompile>
+    <ClCompile Include="nextsetpartition.cpp">
+      <Filter>Файлы исходного кода\next</Filter>
+    </ClCompile>
+    <ClCompile Include="nextbrackets.cpp">
+      <Filter>Файлы исходного кода\next</Filter>
+    </ClCompile>
+    <ClCompile Include="nextmultiperm.cpp">
+      <Filter>Файлы исходного кода\next</Filter>
+    </ClCompile>
+    <ClCompile Include="nextpartition.cpp">
+      <Filter>Файлы исходного кода\next</Filter>
+    </ClCompile>
+    <ClCompile Include="part2sets.cpp">
+      <Filter>Файлы исходного кода\all</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
